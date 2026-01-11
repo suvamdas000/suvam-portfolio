@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suvam Das | Risk & Intelligence Specialist</title>
+    <meta name="description" content="Portfolio of Suvam Das - Financial Crime, Fraud Prevention, and Data Risk Specialist. Amazon Top Performer & Security Researcher.">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a',
+                        accent: '#3b82f6',
+                        secondary: '#64748b',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .gradient-text {
+            background: linear-gradient(to right, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+        }
+        /* Photo Animation */
+        .profile-photo-container {
+            position: relative;
+            z-index: 10;
+        }
+        .profile-photo-container::after {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #3b82f6, #8b5cf6, #3b82f6);
+            z-index: -1;
+            animation: border-spin 4s linear infinite;
+        }
+        @keyframes border-spin {
+            0% { filter: hue-rotate(0deg); }
+            100% { filter: hue-rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased selection:bg-accent selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="text-xl font-bold text-primary tracking-tight">SD.</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-sm font-medium hover:text-accent transition">About</a>
+                    <a href="#expertise" class="text-sm font-medium hover:text-accent transition">Expertise</a>
+                    <a href="#experience" class="text-sm font-medium hover:text-accent transition">Experience</a>
+                    <a href="#projects" class="text-sm font-medium hover:text-accent transition">Achievements</a>
+                </div>
+                <a href="mailto:contactsuvam@gmail.com" class="px-5 py-2.5 bg-primary text-white text-sm font-semibold rounded-lg hover:bg-slate-800 transition shadow-lg shadow-blue-500/20">
+                    Hire Me
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="pt-32 pb-20 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            
+            <!-- Text Content -->
+            <div class="flex-1 text-center md:text-left order-2 md:order-1">
+                <div class="inline-block px-3 py-1 mb-6 text-xs font-semibold tracking-wider text-accent uppercase bg-blue-50 rounded-full border border-blue-100">
+                    Risk & Data Intelligence
+                </div>
+                <h1 class="text-5xl md:text-6xl font-bold text-primary mb-6 leading-tight">
+                    Solving Complex Financial Crime with <span class="gradient-text">Data & Forensic Logic.</span>
+                </h1>
+                <p class="text-xl text-secondary mb-10 leading-relaxed">
+                    Risk Specialist at <strong>Amazon</strong> preventing <strong>$60k+ monthly loss</strong>. I bridge the gap between Operations, Compliance, and Technical Data Analysis.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <a href="#experience" class="px-8 py-3 bg-accent text-white font-semibold rounded-lg hover:bg-blue-600 transition shadow-lg shadow-blue-500/30">
+                        View Work
+                    </a>
+                    <a href="#" onclick="alert('Please link your PDF file in the code!')" class="px-8 py-3 bg-white text-gray-700 border border-gray-200 font-semibold rounded-lg hover:bg-gray-50 transition">
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+
+            <!-- Profile Photo (Fixed Badge) -->
+            <div class="flex-shrink-0 relative group order-1 md:order-2">
+                <div class="profile-photo-container w-64 h-64 md:w-80 md:h-80 rounded-full p-1 bg-white">
+                    <img src="1000937308.jpg" alt="Suvam Das" class="w-full h-full object-cover rounded-full border-4 border-white shadow-2xl">
+                </div>
+                
+                <!-- Fixed Floating Badge (Moved further out and added higher Z-index) -->
+                <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-xl shadow-xl border border-gray-100 animate-bounce delay-700 z-50">
+                    <div class="flex items-center gap-3">
+                        <div class="bg-green-100 p-2 rounded-full text-green-600">
+                            <i class="fa-solid fa-check-double"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-500 font-medium">Global Rank</div>
+                            <div class="text-sm font-bold text-primary">Top 3 (WW)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 border-t border-gray-200 pt-10 text-center">
+            <div>
+                <div class="text-3xl font-bold text-primary">~4 Yrs</div>
+                <div class="text-sm text-secondary font-medium">Risk Experience</div>
+            </div>
+            <div>
+                <div class="text-3xl font-bold text-primary">$60k+</div>
+                <div class="text-sm text-secondary font-medium">Monthly Loss Prevented</div>
+            </div>
+            <div>
+                <div class="text-3xl font-bold text-primary">Top 3</div>
+                <div class="text-sm text-secondary font-medium">Global Ranking</div>
+            </div>
+            <div>
+                <div class="text-3xl font-bold text-primary">8%</div>
+                <div class="text-sm text-secondary font-medium">AHT Reduction</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-primary">Core Competencies</h2>
+                <p class="text-secondary mt-2">Specialized skills across FinCrime, Fraud, and Data.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="p-8 bg-gray-50 rounded-2xl border border-gray-100 card-hover transition duration-300">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-accent mb-6">
+                        <i class="fa-solid fa-shield-halved text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Financial Crime & AML</h3>
+                    <p class="text-secondary text-sm leading-relaxed mb-4">
+                        Expert in Transaction Monitoring, Source of Funds (SoF) verification, and detecting Money Laundering typologies.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>KYC / CDD / EDD</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Regulatory Reporting</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Sanctions Screening</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="p-8 bg-gray-50 rounded-2xl border border-gray-100 card-hover transition duration-300">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center text-purple-600 mb-6">
+                        <i class="fa-solid fa-user-secret text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Trust & Fraud Prevention</h3>
+                    <p class="text-secondary text-sm leading-relaxed mb-4">
+                        Proactive detection of Account Takeover (ATO), Syndicate Fraud Rings, and Buyer-Seller Collusion.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Synthetic Identity Defense</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Chargeback Mitigation</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Forensic Doc Review</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="p-8 bg-gray-50 rounded-2xl border border-gray-100 card-hover transition duration-300">
+                    <div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center text-emerald-600 mb-6">
+                        <i class="fa-solid fa-code text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-primary mb-3">Data & Technical Analysis</h3>
+                    <p class="text-secondary text-sm leading-relaxed mb-4">
+                        Leveraging SQL and Python to query large datasets, automate manual workflows, and identify anomalies.
+                    </p>
+                    <ul class="text-sm text-gray-600 space-y-2">
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>SQL (Complex Queries)</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Python (Pandas/Automation)</li>
+                        <li><i class="fa-solid fa-check text-green-500 mr-2"></i>Web Traffic Analysis (HAR)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-primary mb-12 text-center">Professional Journey</h2>
+            
+            <div class="relative border-l border-gray-200 ml-3 space-y-12">
+                <!-- Job 1 -->
+                <div class="mb-10 ml-8 relative group">
+                    <div class="absolute w-4 h-4 bg-accent rounded-full -left-[38px] top-1.5 border-4 border-white shadow-sm group-hover:scale-125 transition"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-2">
+                        <h3 class="text-xl font-bold text-primary">Investigation Specialist – Payment Risk</h3>
+                        <span class="text-sm font-semibold text-accent bg-blue-50 px-3 py-1 rounded-full">Mar 2022 – Present</span>
+                    </div>
+                    <div class="text-secondary font-medium mb-4">Amazon Development Center | Functional Scope: Senior Risk Analyst & SME</div>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Acting as a Technical SME for Financial Crime and Transaction Monitoring. Responsible for detecting high-value fraud patterns and improving operational logic.
+                    </p>
+                    <ul class="space-y-2 mb-4">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-arrow-right text-accent mt-1.5 mr-3 text-xs"></i>
+                            <span class="text-sm text-gray-600"><strong>Prevented $60k+ monthly loss</strong> by detecting "System Miss" anomalies.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-arrow-right text-accent mt-1.5 mr-3 text-xs"></i>
+                            <span class="text-sm text-gray-600"><strong>Reduced AHT by 8%</strong> via Python-based workflow automation logic.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-arrow-right text-accent mt-1.5 mr-3 text-xs"></i>
+                            <span class="text-sm text-gray-600">Standardized 12+ SOPs and conducted UAT for new risk tools.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="ml-8 relative group">
+                    <div class="absolute w-4 h-4 bg-gray-300 rounded-full -left-[38px] top-1.5 border-4 border-white shadow-sm"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-2">
+                        <h3 class="text-lg font-bold text-gray-700">Customer Support Associate (L2)</h3>
+                        <span class="text-sm text-gray-500">Oct 2021 – Jan 2022</span>
+                    </div>
+                    <div class="text-secondary font-medium mb-2">Amazon Development Center</div>
+                    <p class="text-sm text-gray-600">
+                        Managed frontline risk events and identified potential compliance breaches. Maintained strict data privacy standards.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="projects" class="py-20 bg-primary text-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-12 text-center">Achievements & Impact</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-accent transition">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold">WW Top Tipper (Global Top 3)</h3>
+                            <p class="text-slate-400 text-sm mt-1">Amazon Global Risk Awards</p>
+                        </div>
+                        <i class="fa-solid fa-trophy text-yellow-500 text-2xl"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Recognized for <strong>22+ consecutive months</strong> as a global top performer for identifying sophisticated fraud patterns.
+                    </p>
+                </div>
+
+                <div class="bg-slate-800 p-8 rounded-2xl border border-slate-700 hover:border-accent transition">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <h3 class="text-xl font-bold">Zomato Security Bounty</h3>
+                            <p class="text-slate-400 text-sm mt-1">Security Research</p>
+                        </div>
+                        <i class="fa-solid fa-bug text-red-500 text-2xl"></i>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Awarded <strong>$2,000</strong> for identifying a critical <strong>CVSS 9.0 vulnerability</strong>. Demonstrates a "Hacker Mindset".
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12 border-t border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold text-primary mb-6">Let's Connect</h2>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="mailto:contactsuvam@gmail.com" class="text-gray-400 hover:text-accent text-2xl transition">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://linkedin.com/in/suvamdas000" target="_blank" class="text-gray-400 hover:text-accent text-2xl transition">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+            <p class="text-xs text-gray-400">
+                &copy; 2024 Suvam Das.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
